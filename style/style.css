@@ -1,0 +1,234 @@
+
+html { 
+       font-size:100%; 
+}
+
+body{
+
+       height:100%;
+       margin: 0px;
+       font-family: 'Arial', sans-serif;
+  
+  }
+
+td{
+       font-size: 2vw;
+       height: 4vw;
+       width:  4vw;
+       text-align: center;
+       
+}
+/* the board with numbers */
+.header_h{
+       font-size: 8vw;
+       letter-spacing: 1vw;
+       margin-bottom: 0px;
+       margin-top: 5px;
+       margin-left: 25%;
+       font-family: Arial, Helvetica, sans-serif;
+       
+       
+}
+
+.header_p{
+
+       
+       letter-spacing: 1vw;
+       font-size: 2.5vw;
+       margin-left: 26%;
+       margin-top: 0px;
+       
+}
+
+hr{
+       
+       margin-top: -23px;
+       margin-left: 25%;
+       margin-bottom: 0px;
+       background-color: black;
+       border: 1px solid;
+      
+}
+
+.container{
+
+       display: flex;
+       flex-direction: row;
+   
+}
+
+.square_count{
+
+       text-align: center;
+       height: 15.6vw;
+       width: 20vw;
+       padding: 3.5vw 3vw 2.5vw 2vw;
+       margin-left: 15%;    
+       margin-top: 2.5%;
+       background-color: #9a031e;
+       font-size: 12vw;
+
+}
+.countdown_number{
+
+}
+.countdown{
+   
+}
+.board_game{
+
+       max-width: 45vw;
+       max-height: 42vw;
+       background-color: #fb8b24;
+       padding: 2vw 2vw 2vw 2vw;
+       margin-top: 2.5%;
+       margin-left:-22vw;
+       
+}
+.btn_class{
+       
+       font-size: 2vw;
+       
+       
+
+}
+.square{
+
+}
+/* where we check the numbers */
+.check_box{
+
+       width: 23vw;
+       max-height: 21.6vw;
+       margin-top: 2.5vw;
+       background-color: #0f4c5c;
+
+}
+.seven_sum_total{
+       
+       padding-left: 8vw;
+       padding-top: 3.5vw;
+       margin-top: 0px;
+       margin-bottom: 0px;
+       font-size: 12vw;
+       
+}
+/* form */
+.textview{
+
+       visibility: hidden;
+             
+}
+.form{
+}
+
+.toggle_style{
+       background-color: black;
+}
+#seven_for_win{
+      
+}
+#seven_tokens{
+       padding-left: 2.5vw;
+}
+#seven_sum_total{
+       float: left;
+}
+
+
+@media screen and (max-width: 700px) {
+
+       .header_h{
+
+              font-size: 8vw;
+              letter-spacing: 2vw;
+              margin-bottom: 0px;
+              margin-top: 5px;
+              margin-left: 15%;
+              font-family: Arial, Helvetica, sans-serif;
+       
+       }
+       
+       .header_p{
+       
+              letter-spacing: 0.9vw;
+              font-size: 3.5vw;
+              margin-left: 17%;
+              margin-top: 0px;
+              
+       }
+       hr{
+
+              margin-top: -8px;
+              margin-left: 25%;
+              margin-bottom: 0px;
+              background-color: black;
+              border: 1px solid;
+       }
+
+       .container{
+
+              display: flex;
+              width: 70%; 
+              flex-flow: column;
+
+       }
+
+       .square_count{
+
+              text-align: center;
+              height: 25vw;
+              width: 30vw;
+              margin-left: 50%;    
+              margin-top: 15%;
+              margin-bottom: -21px;
+              background-color: #9a031e;
+              font-size: 20vw;
+                   
+       }
+       .countdown_number{
+
+              padding-bottom: 15vw;
+       }
+       .btn_class{
+             
+              text-align: center;
+              width: 6vw;
+              height: 5vw;
+              font-size: 3vw;
+
+
+       }
+
+       .board_game{
+
+              width: 35vw;
+              height: 35vw;
+              
+              margin-left: 50%;
+              margin-top: -1px;
+              margin-bottom:0px;
+              background-color: #fb8b24;
+       
+       }
+
+       .check_box{
+
+               
+              text-align: center;
+              max-height: 35vw;
+              width: auto;
+              margin-top: 0px;
+              margin-left: 50%;
+              background-color: #0f4c5c;
+              
+       }
+       .seven_sum_total{
+    
+              overflow: hidden;
+              padding-left: 30%;
+              font-size: 25vw;
+              margin-bottom: 1vw;
+              padding-bottom: 1vw;
+       }
+}

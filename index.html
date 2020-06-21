@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Give-Me-Seven</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Arizonia&family=Black+Ops+One&family=Boogaloo&family=Bungee+Outline&family=Cabin+Sketch:wght@700&family=Calligraffitti&family=Caveat+Brush&family=Chonburi&family=Combo&family=Emilys+Candy&family=Freckle+Face&family=Fredericka+the+Great&family=Gravitas+One&family=Hanalei&family=Herr+Von+Muellerhoff&family=Knewave&family=Mali:ital,wght@1,200&family=Mrs+Saint+Delafield&family=Rochester&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&family=Shrikhand&family=Sofia&family=Stardos+Stencil:wght@700&family=Titan+One&family=Vast+Shadow&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arbutus+Slab&family=Artifika&family=Arvo:ital@1&family=Atomic+Age&family=Autour+One&family=Bitter:ital@0;1&family=Bonbon&family=Bowlby+One&family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Butcherman&family=Chelsea+Market&family=Cherry+Cream+Soda&family=Cherry+Swash&family=Cinzel&family=Cinzel+Decorative&family=Coda&family=Codystar&family=Comfortaa:wght@300&family=Cousine&family=Coustard&family=Crafty+Girls&family=Croissant+One&family=Cutive&family=Cutive+Mono&family=Delius+Unicase&family=Domine&family=Donegal+One&family=Eagle+Lake&family=Eater&family=Elsie&family=Elsie+Swash+Caps&family=Emblema+One&family=Erica+One&family=Exo+2:ital,wght@0,100;1,100&family=Fascinate&family=Fascinate+Inline&family=Fauna+One&family=Finger+Paint&family=Fontdiner+Swanky&family=Galindo&family=Gloria+Hallelujah&family=Gorditas&family=Happy+Monkey&family=Headland+One&family=Homemade+Apple&family=Inknut+Antiqua&family=Jacques+Francois+Shadow&family=Joti+One&family=Kameron&family=Kavoon&family=Ledger&family=Libre+Baskerville:ital@1&family=Limelight&family=Luckiest+Guy&family=Marko+One&family=Merienda&family=Merienda+One&family=Merriweather+Sans&family=Merriweather:wght@900&family=Metamorphous&family=Miltonian&family=Miltonian+Tattoo&family=Modern+Antiqua&family=Monoton&family=MuseoModerno:wght@100&family=Nixie+One&family=Noticia+Text&family=Noto+Sans+JP:wght@300&family=Noto+Serif&family=Nova+Cut&family=Nova+Mono&family=Offside&family=Oldenburg&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@300&family=Oxygen+Mono&family=PT+Mono&family=Paprika&family=Peralta&family=Permanent+Marker&family=Piedra&family=Playfair+Display+SC&family=Poller+One&family=Prosto+One&family=Raleway:ital,wght@1,100&family=Rammetto+One&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Slab:wght@200&family=Roboto:wght@100&family=Rock+Salt&family=Ruslan+Display&family=Rye&family=Sanchez&family=Sarina&family=Share+Tech+Mono&family=Sigmar+One&family=Skranji:wght@400;700&family=Slackey&family=Sniglet&family=Snowburst+One&family=Source+Code+Pro:ital,wght@1,200&family=Source+Sans+Pro:ital,wght@1,200&family=Special+Elite&family=Sriracha&family=Tienne&family=Tillana&family=Titan+One&family=Trade+Winds&family=Trocchi&family=Trykker&family=Uncial+Antiqua&family=Unlock&family=Vampiro+One&family=Volkhov&family=Vollkorn&family=Wallpoet&family=Warnes&family=Wellfleet&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+     <div class="header">
+      <p class="header_h">Give-Me-Seven</p>
+      <p class="header_p"><span id="seven_for_win">0</span > times, in less than 15 seconds</p>
+      <hr>
+     </div>
+    
+<div class="container">
+    <div class="square_count">
+         <div class="countdown">
+             <span class="countdown_number" id="countdown_id">0</span>
+         </div>
+    </div>
+     
+      <!--Table Game-->
+          <table class="board_game">
+                 <form name="form">
+                     <input class="textview" name="textview">
+                 </form>
+              <div class="number_board">
+               
+                 <tr>
+              <td class = "square">
+                   <button type="button" class="btn_class" id="btn_one" onclick="insert(btn_one)"></button>                          
+                   </td>
+              <td class = "square">
+                   <button type="button" class="btn_class" id="btn_two" onclick="insert(btn_two)"></button>
+                   </td>
+              <td class = "square">
+                   <button type="button" class="btn_class" id="btn_three" onclick="insert(btn_three)"></button>
+                   </td>
+               <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_four" onclick="insert(btn_four)"></button>
+                    </td>
+                     
+                 </tr>
+                 <tr>
+              
+              <td  class = "square">
+                   <button type="button" class="btn_class" id="btn_five" onclick="insert(btn_five)"></button>
+                   </td>
+              <td  class = "square">
+                   <button type="button" class="btn_class" id="btn_six" onclick="insert(btn_six)"></button>
+                   </td>
+              <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_seven" onclick="insert(btn_seven)"></button>
+                    </td>
+              <td  class = "square">
+                         <button type="button" class="btn_class" id="btn_eight" onclick="insert(btn_eight)"></button>
+                    </td>
+                 </tr>
+                 <tr>
+              <td  class = "square">
+                   <button type="button" class="btn_class" id="btn_nine" onclick="insert(btn_nine)"></button>
+                   </td>
+              <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_teen" onclick="insert(btn_teen)"></button>
+                    </td>
+              <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_eleven" onclick="insert(btn_eleven)"></button>
+                    </td>
+              <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_twelve" onclick="insert(btn_twelve)"></button>
+                         </td>
+                 </tr>
+                 <tr>
+               <td  class = "square">
+                    <button type="button" class="btn_class" id="btn_thirteen" onclick="insert(btn_thirteen)"></button>
+                    </td>
+               <td  class = "square">
+                     <button type="button" class="btn_class" id="btn_fourteen" onclick="insert(btn_fourteen)"></button>
+                     </td>
+               <td  class = "square">
+                     <button type="button" class="btn_class" id="btn_fifteen" onclick="insert(btn_fifteen)"></button>
+                     </td>
+               <td  class = "square">
+                     <button type="button" class="btn_class" id="btn_sixteen" onclick="insert(btn_sixteen)"></button>
+                          </td>
+                 </tr>
+               
+          </table>
+
+
+      <div class="check_box">
+               <span class="seven_sum_total" id="seven_sum_total">0</span>
+      </div>
+
+</div>
+
+        <script src="scrypt/scrypt.js" ></script>
+    </body>
+</html>
