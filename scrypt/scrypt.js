@@ -349,7 +349,7 @@ function insert(num){
           interval_random()
           function interval_random() {
             setInterval(function(){
-              var counter = 1000;
+              var counter = 10000000;
               counter--;
               if ( counter > 0){
                             
@@ -373,9 +373,8 @@ function insert(num){
                 document.getElementById("seven_sum_total").innerHTML = "7";
               }
             
-              
                
-          },100);
+          },10);
           }
           
 
