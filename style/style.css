@@ -1,25 +1,24 @@
 
 html { 
        font-size:100%; 
+       margin: 0;
+       width: 100%;
 }
 
 body{
 
+       margin: 0;
        height:100%;
-       margin: 0px;
        font-family: 'Arial', sans-serif;
   
   }
 
 td{
-       font-size: 2vw;
-       height: 4vw;
-       width:  4vw;
-       text-align: center;
-       
+   
 }
 /* the board with numbers */
 .header_h{
+
        font-size: 8vw;
        letter-spacing: 1vw;
        margin-bottom: 0px;
@@ -27,12 +26,10 @@ td{
        margin-left: 25%;
        font-family: Arial, Helvetica, sans-serif;
        
-       
 }
 
 .header_p{
 
-       
        letter-spacing: 1vw;
        font-size: 2.5vw;
        margin-left: 26%;
@@ -42,7 +39,7 @@ td{
 
 hr{
        
-       margin-top: -23px;
+       margin-top: -3.1vw;
        margin-left: 25%;
        margin-bottom: 0px;
        background-color: black;
@@ -53,97 +50,99 @@ hr{
 .container{
 
        display: flex;
-       flex-direction: row;
-   
-}
-
-.square_count{
-
-       text-align: center;
-       height: 15.6vw;
-       width: 20vw;
-       padding: 3.5vw 3vw 2.5vw 2vw;
-       margin-left: 15%;    
-       margin-top: 2.5%;
-       background-color: #9a031e;
-       font-size: 12vw;
-
-}
-.countdown_number{
-
-}
-.countdown{
-   
-}
-.board_game{
-
-       max-width: 45vw;
-       max-height: 42vw;
-       background-color: #fb8b24;
-       padding: 2vw 2vw 2vw 2vw;
-       margin-top: 2.5%;
-       margin-left:-22vw;
+       margin-top: 5%;
+       margin-left: 10%;
+       margin-right: 10%;
        
+       position: relative;
+
 }
+
+.countdown_square{
+
+       width: 25vw;
+       height: auto;
+       background-color: #9a031e;
+       text-align: center;
+             
+}
+.countdown_square_number{
+
+        padding-top: 22%;
+
+}
+
+.countdown_number{  
+
+       font-size: 12vw;
+          
+}
+
+.board_square{
+       
+       width: 25vw;
+       height: 25vw;
+       background-color: #fb8b24;
+       padding: 1vw 1vw 1vw 1vw;
+       text-align: center;
+              
+}
+
 .btn_class{
        
+       background: none transparent;
+       border: black 1px solid;
        font-size: 2vw;
-       
-       
-
+       padding: 0.5vw 1vw 0.5vw 1vw ;
+     
 }
 .square{
 
 }
 /* where we check the numbers */
-.check_box{
+.seven_square{
 
-       width: 23vw;
-       max-height: 21.6vw;
-       margin-top: 2.5vw;
+       width: 25vw;
+       height: 25vw;
+       text-align: center;
        background-color: #0f4c5c;
 
 }
+.seven_square_number{
+
+       padding-top: 22%;
+    
+}
 .seven_sum_total{
        
-       padding-left: 8vw;
-       padding-top: 3.5vw;
-       margin-top: 0px;
-       margin-bottom: 0px;
        font-size: 12vw;
        
 }
 /* form */
 .textview{
 
-       visibility: hidden;
              
 }
 .form{
-}
 
-.toggle_style{
-       background-color: black;
-}
-#seven_for_win{
-      
-}
-#seven_tokens{
-       padding-left: 2.5vw;
-}
-#seven_sum_total{
-       float: left;
+       
+       overflow: hidden;
+       visibility: hidden;
 }
 
 
-@media screen and (max-width: 700px) {
+
+
+
+
+@media screen and (max-width: 750px) {
 
        .header_h{
 
-              font-size: 8vw;
+              font-size: 7vw;
               letter-spacing: 2vw;
               margin-bottom: 0px;
-              margin-top: 5px;
+              margin-top: 15px;
               margin-left: 15%;
               font-family: Arial, Helvetica, sans-serif;
        
@@ -158,77 +157,77 @@ hr{
               
        }
        hr{
-
-              margin-top: -8px;
-              margin-left: 25%;
-              margin-bottom: 0px;
-              background-color: black;
-              border: 1px solid;
+   
+              margin-top: -4vw;
+              margin-left: 15%;
+              border: 0.25px solid;
+              
        }
 
        .container{
 
-              display: flex;
-              width: 70%; 
+              width: 33vw;
+              margin-left: 30%;
+              margin-top: 5%;
               flex-flow: column;
 
        }
 
-       .square_count{
+       .countdown_square{
 
               text-align: center;
-              height: 25vw;
-              width: 30vw;
-              margin-left: 50%;    
-              margin-top: 15%;
-              margin-bottom: -21px;
-              background-color: #9a031e;
-              font-size: 20vw;
+              width: 40vw;
+              height: 40vw;
+
+              
+              
                    
        }
-       .countdown_number{
+       .countdown_square_number{
 
-              padding-bottom: 15vw;
-       }
-       .btn_class{
-             
-              text-align: center;
-              width: 6vw;
-              height: 5vw;
-              font-size: 3vw;
-
-
-       }
-
-       .board_game{
-
-              width: 35vw;
-              height: 35vw;
+              padding-top: 25%;
+      
+      }
+      
+       .countdown_number{  
+      
+             font-size: 17vw;
+                
+      }
+      .board_square{
+       
+             width: 40vw;
+             height: 40vw;
+             background-color: #fb8b24;
+             text-align: center;
               
-              margin-left: 50%;
-              margin-top: -1px;
-              margin-bottom:0px;
-              background-color: #fb8b24;
+}
+       .btn_class{
+              
+             background: none transparent;
+            /* border: none; */
+             font-size: 3vw;
+             font-weight: bold;
+             color: black;
+             padding: 1.5vw 2vw 1.5vw 2vw ;
+     
+}
+       .seven_square{
+       
+              width: 40vw;
+              height: 40vw;
+              text-align: center;
+              background-color: #0f4c5c;
        
        }
-
-       .check_box{
-
-               
-              text-align: center;
-              max-height: 35vw;
-              width: auto;
-              margin-top: 0px;
-              margin-left: 50%;
-              background-color: #0f4c5c;
-              
+       .seven_square_number{
+       
+              padding-top: 25%;
+           
        }
        .seven_sum_total{
-    
-              overflow: hidden;
-              padding-left: 30%;
-              font-size: 25vw;
-              margin-bottom: 1vw;
-              padding-bottom: 1vw;
+              
+              font-size: 17vw;
+              
        }
 }

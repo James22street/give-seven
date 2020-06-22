@@ -260,7 +260,7 @@ function insert(num){
   var countdown_id = document.getElementById("countdown_id")
   
   function countdown() {
-    var counter = 12;
+    var counter = 14;
     var interval = setInterval(function() {
       counter--;
       if (counter == 0) {
@@ -271,7 +271,7 @@ function insert(num){
         
       } else {
         countdown_id.innerHTML = counter;
-        console.log("Timer --> " + counter);
+        /*console.log("Timer --> " + counter);*/
       }
       
       if (seven_tokens == 5){
@@ -339,7 +339,7 @@ function insert(num){
                            'Volkhov','Vollkorn', 'Wallpoet', 
                            'Warnes','Wellfleet',
                           ];
-          console.log (font_type.length)
+          
           var num;
           var num_dos;
           var num_three;
@@ -349,7 +349,7 @@ function insert(num){
           interval_random()
           function interval_random() {
             setInterval(function(){
-              var counter = 185;
+              var counter = 1000;
               counter--;
               if ( counter > 0){
                             
@@ -375,7 +375,7 @@ function insert(num){
             
               
                
-          }, 50);
+          },100);
           }
           
 

@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
+     
      <div class="header">
       <p class="header_h">Give-Me-Seven</p>
       <p class="header_p"><span id="seven_for_win">0</span > times, in less than 15 seconds</p>
@@ -21,20 +22,18 @@
      </div>
     
 <div class="container">
-    <div class="square_count">
-         <div class="countdown">
+    <div class="countdown_square">
+         <div class="countdown_square_number">
              <span class="countdown_number" id="countdown_id">0</span>
          </div>
     </div>
      
       <!--Table Game-->
-          <table class="board_game">
-                 <form name="form">
-                     <input class="textview" name="textview">
-                 </form>
-              <div class="number_board">
-               
-                 <tr>
+      <table class="board_square">
+              
+             <div class="number_square_number">
+                     
+                <tr>
               <td class = "square">
                    <button type="button" class="btn_class" id="btn_one" onclick="insert(btn_one)"></button>                          
                    </td>
@@ -48,8 +47,8 @@
                     <button type="button" class="btn_class" id="btn_four" onclick="insert(btn_four)"></button>
                     </td>
                      
-                 </tr>
-                 <tr>
+                </tr>
+                <tr>
               
               <td  class = "square">
                    <button type="button" class="btn_class" id="btn_five" onclick="insert(btn_five)"></button>
@@ -63,8 +62,8 @@
               <td  class = "square">
                          <button type="button" class="btn_class" id="btn_eight" onclick="insert(btn_eight)"></button>
                     </td>
-                 </tr>
-                 <tr>
+                </tr>
+                <tr>
               <td  class = "square">
                    <button type="button" class="btn_class" id="btn_nine" onclick="insert(btn_nine)"></button>
                    </td>
@@ -77,8 +76,8 @@
               <td  class = "square">
                     <button type="button" class="btn_class" id="btn_twelve" onclick="insert(btn_twelve)"></button>
                          </td>
-                 </tr>
-                 <tr>
+                </tr>
+                <tr>
                <td  class = "square">
                     <button type="button" class="btn_class" id="btn_thirteen" onclick="insert(btn_thirteen)"></button>
                     </td>
@@ -91,17 +90,26 @@
                <td  class = "square">
                      <button type="button" class="btn_class" id="btn_sixteen" onclick="insert(btn_sixteen)"></button>
                           </td>
-                 </tr>
-               
-          </table>
+                </tr>
+                 
+             </div>  
+                 
+      </table>
+    
 
-
-      <div class="check_box">
+      <div class="seven_square">
+           <div class="seven_square_number">
                <span class="seven_sum_total" id="seven_sum_total">0</span>
+           </div>
       </div>
 
 </div>
 
+<form class="form" name="form">
+     <input class="textview" name="textview">
+</form>
+                 
         <script src="scrypt/scrypt.js" ></script>
     </body>
+    
 </html>
