@@ -53,7 +53,6 @@ hr{
        margin-top: 5%;
        margin-left: 10%;
        margin-right: 10%;
-       max-height: 25vw;
        position: relative;
 
 }
@@ -90,12 +89,15 @@ hr{
 
 .btn_class{
        
-       background: none transparent;
+       background: transparent;
        border: black 1px solid;
        font-size: 2vw;
        padding: 0.5vw 1vw 0.5vw 1vw ;
      
 }
+.btn_class:active {
+       background-color: yellow;
+     } 
 .square{
 
 }

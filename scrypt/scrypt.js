@@ -164,8 +164,12 @@ for (var i = 0; i < disable_button.length; i++) {
 }
 
 function disable_btn () {
-    console.log("disable")
+
+    console.log("disable");
     this.disabled = true;
+    this.style.background = "black";
+    this.style.color = "#fb8b24";
+    
 }
 
 function insert(num){
