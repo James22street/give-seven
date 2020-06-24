@@ -202,11 +202,19 @@ function insert(num){
            seven_sum = [];
             
         }else if (seven_sum_lost > 7){
+          
+          
+         /* document.getElementsById("seven_background_img").style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png)";*/
+          
           document.getElementById("seven_sum_total").style.fontSize = '5vw';
           document.getElementById("seven_sum_total").style.textAlign = 'center';
           document.getElementById("seven_sum_total").style.paddingLeft = '0'
-          document.getElementById("seven_sum_total").innerHTML = "YOU LOST";
+          document.getElementById("seven_square").innerHTML=  "<img src='image/skull.svg' class='seven_square'>";
+          document.getElementById("countdown_id").remove;
+          document.getElementById("countdown_square").innerHTML=  "<img src='image/skull.svg'    class='countdown_square'>";
           
+        
+
              var counter = 2;
              var interval = setInterval(function() {
                counter--;
