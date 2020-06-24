@@ -272,7 +272,7 @@ function insert(num){
   var countdown_id = document.getElementById("countdown_id")
   
   function countdown() {
-    var counter = 14;
+    var counter = 16;
     var interval = setInterval(function() {
       counter--;
       if (counter == 0) {
